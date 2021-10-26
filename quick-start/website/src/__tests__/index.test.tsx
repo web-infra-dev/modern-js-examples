@@ -4,6 +4,6 @@ import Index from '../pages';
 describe('home page', () => {
   it('should have contents', () => {
     const { getByText } = renderApp(<Index />);
-    expect(getByText('Powered by Modern.JS')).toBeInTheDocument();
+    expect(getByText('Powered by Modern.js')).toBeInTheDocument();
   });
 });

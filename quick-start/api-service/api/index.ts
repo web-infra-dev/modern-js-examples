@@ -1,3 +1,1 @@
-export default async() => {
-  return 'Hello Modern.js'
-}
+export default () => 'Hello Modern.js';
