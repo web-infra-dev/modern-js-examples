@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Radio, RadioChangeEvent } from 'antd';
-import { Route, Switch, useHistory } from '@modern-js/runtime/router';
+import { Route, useHistory } from '@modern-js/runtime/router';
 import { Helmet } from '@modern-js/runtime/head';
 import 'tailwindcss/base.css';
 import 'tailwindcss/components.css';
@@ -25,20 +25,18 @@ function App() {
           <Radio value="/archives">Archives</Radio>
         </Radio.Group>
       </div>
-      <Switch>
-        <Route path="/" exact={true}>
-          <Helmet>
-            <title>All</title>
-          </Helmet>
-          <Contacts source="items" />
-        </Route>
-        <Route path="/archives" exact={true}>
-          <Helmet>
-            <title>Archives</title>
-          </Helmet>
-          <Contacts source="archived" />
-        </Route>
-      </Switch>
+      <Route path="/" exact={true}>
+        <Helmet>
+          <title>All</title>
+        </Helmet>
+        <Contacts source="items" />
+      </Route>
+      <Route path="/archives" exact={true}>
+        <Helmet>
+          <title>Archives</title>
+        </Helmet>
+        <Contacts source="archived" />
+      </Route>
     </div>
   );
 }

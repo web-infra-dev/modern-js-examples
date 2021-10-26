@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Radio, RadioChangeEvent } from 'antd';
-import { Route, Switch, useHistory } from '@modern-js/runtime/router';
+import { Route, useHistory } from '@modern-js/runtime/router';
 import { Helmet } from '@modern-js/runtime/head';
 import 'tailwindcss/base.css';
 import 'tailwindcss/components.css';
