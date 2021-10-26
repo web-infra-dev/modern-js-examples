@@ -48,7 +48,7 @@ const App: React.FC = () => {
               type="button"
               onClick={() => {
                 bridge.startToUpdate(
-                  'http://tosv.byted.org/obj/jupiter-electron-demo',
+                  'xxxx',
                 );
               }}>
               开始检测升级
