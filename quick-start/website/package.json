@@ -1,0 +1,72 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "scripts": {
+    "new": "modern new",
+    "reset": "rm -rf node_modules",
+    "dev": "modern dev",
+    "build": "modern build",
+    "start": "modern start",
+    "test": "modern test",
+    "preview": "modern deploy --mode preview",
+    "deploy": "modern deploy"
+  },
+  "engines": {
+    "node": ">=12.17.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "node --max_old_space_size=8192 ./node_modules/.bin/eslint --fix --color --cache --quiet",
+      "git add"
+    ],
+    "*.{js,jsx,mjs,mjsx,cjs,cjsx}": [
+      "node --max_old_space_size=8192 ./node_modules/.bin/eslint --fix --color --cache --quiet",
+      "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "@modern-js"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "dist/",
+    ".rpt2_cache/"
+  ],
+  "dependencies": {
+    "@modern-js/plugin-bff": "latest",
+    "@modern-js/plugin-express": "latest",
+    "@modern-js/runtime": "latest",
+    "axios": "^0.22.0",
+    "express": "^4.17.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "tailwindcss": "2.2.17"
+  },
+  "devDependencies": {
+    "@modern-js/app-tools": "latest",
+    "@modern-js/plugin-testing": "latest",
+    "@modern-js/plugin-jarvis": "latest",
+    "@types/jest": "^26.0.9",
+    "@types/node": "^14",
+    "@types/react": "^17",
+    "@types/react-dom": "^17",
+    "typescript": "^4",
+    "@modern-js/plugin-tailwindcss": "latest"
+  },
+  "modernConfig": {
+    "runtime": {
+      "router": true,
+      "state": true
+    },
+    "server": {
+      "ssr": true
+    }
+  }
+}

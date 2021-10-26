@@ -1,0 +1,21 @@
+{
+  "name": "hello-modern",
+  "scripts": {
+    "dev": "modern dev",
+    "build": "modern build",
+    "start": "modern start"
+  },
+  "dependencies": {
+    "@modern-js/runtime": "latest",
+    "react": "^17",
+    "react-dom": "^17"
+  },
+  "devDependencies": {
+    "@modern-js/app-tools": "latest"
+  },
+  "modernConfig": {
+    "server": {
+      "ssr": true
+    }
+  }
+}

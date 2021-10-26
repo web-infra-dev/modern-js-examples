@@ -1,0 +1,14 @@
+{
+  "extends": "@modern-js/tsconfig/base",
+  "compilerOptions": {
+    "declaration": false,
+    "jsx": "preserve",
+    "baseUrl": "./",
+    "paths": {
+      "@api/*": ["./api/*"],
+      "@/*": ["./src/*"]
+    },
+    "types": ["@modern-js/plugin-testing/type"]
+  },
+  "include": ["src", "api", "server", "config"]
+}

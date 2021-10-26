@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "name": "monorepo",
+  "scripts": {
+    "new": "modern new",
+    "reset": "pnpm -r exec rm -rf node_modules",
+    "clear": "modern clear",
+    "change": "modern change",
+    "bump": "modern bump",
+    "pre": "modern pre",
+    "release": "modern release"
+  },
+  "engines": {
+    "node": ">=12.22.6"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@modern-js"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "dist/",
+    ".rpt2_cache/"
+  ],
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "examples/*",
+      "features/*",
+      "packages/*"
+    ]
+  },
+  "devDependencies": {
+    "@modern-js/monorepo-tools": "latest",
+    "@modern-js/plugin-jarvis": "latest"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
