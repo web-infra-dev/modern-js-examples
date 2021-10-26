@@ -1,5 +1,3 @@
 import { Avatar } from 'antd';
 
-export default ({ name }: {name: string}) => {
-  return <Avatar>{name}</Avatar>
-}
+export default ({ name }: { name: string }) => <Avatar>{name}</Avatar>;

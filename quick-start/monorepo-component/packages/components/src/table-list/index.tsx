@@ -25,15 +25,15 @@ const TableList: React.FC = () => {
     },
   ];
 
-  const [{data}, {load}] = useModel(tableListModel);
+  const [{ data }, { load }] = useModel(tableListModel);
   console.info(data);
 
   useEffect(() => {
     load();
-  }, [])
+  }, []);
 
   return (
-    <div className='table-list table-theme'>
+    <div className="table-list table-theme">
       <Table columns={columns} dataSource={data} />
     </div>
   );

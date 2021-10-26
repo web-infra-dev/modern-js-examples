@@ -2,5 +2,5 @@
 module.exports = {
   runtime: {
     state: true,
-  }
+  },
 };
