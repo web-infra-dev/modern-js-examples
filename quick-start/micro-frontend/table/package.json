@@ -37,11 +37,8 @@
     "dist/"
   ],
   "dependencies": {
-    "@modern-js/plugin-bff": "latest",
-    "@modern-js/plugin-express": "latest",
     "@modern-js/plugin-less": "latest",
     "@modern-js/runtime": "latest",
-    "express": "*",
     "antd": "^4.16.13",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
