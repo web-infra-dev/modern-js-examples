@@ -2,6 +2,6 @@ import { upperCase } from '@/index';
 
 describe('upperCase cases', () => {
   test('upperCase', () => {
-    expect(upperCase('abc')).toBe('ABC')
+    expect(upperCase('abc')).toBe('ABC');
   });
 });

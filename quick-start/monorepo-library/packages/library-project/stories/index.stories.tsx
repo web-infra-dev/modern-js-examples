@@ -1,11 +1,11 @@
-import { useState } from "react";
-import { upperCase } from "@/index";
+import { useState } from 'react';
+import { upperCase } from '@/index';
 
 const Component = () => {
-  const [value, setValue] = useState("");
+  const [value, setValue] = useState('');
   return (
     <div>
-      <input value={value} onChange={(e) => setValue(e.target.value)} />
+      <input value={value} onChange={e => setValue(e.target.value)} />
       <div>result: {upperCase(value)}</div>
     </div>
   );
@@ -13,5 +13,5 @@ const Component = () => {
 export const YourStory = () => <Component />;
 
 export default {
-  title: "Your Stories",
+  title: 'Your Stories',
 };

@@ -12,15 +12,21 @@
     "dev": "modern dev",
     "build": "modern build",
     "reset": "rm -rf node_modules",
+    "lint": "modern lint",
     "change": "modern change",
     "bump": "modern bump",
     "pre": "modern pre",
-    "publish": "modern release",
+    "release": "modern release",
     "new": "modern new",
     "test": "modern test --passWithNoTests"
   },
   "engines": {
-    "node": ">=12.22.6"
+    "node": ">=14.17.6"
+  },
+  "eslintConfig": {
+    "extends": [
+      "@modern-js"
+    ]
   },
   "husky": {
     "hooks": {
@@ -29,17 +35,12 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "node --max_old_space_size=8192 ./node_modules/.bin/eslint --fix --color --cache --quiet",
+      "node --max_old_space_size=8192 ./node_modules/eslint/bin/eslint.js --fix --color --cache --quiet",
       "git add"
     ],
     "*.{js,jsx,mjs,mjsx,cjs,cjsx}": [
-      "node --max_old_space_size=8192 ./node_modules/.bin/eslint --fix --color --cache --quiet",
+      "node --max_old_space_size=8192 ./node_modules/eslint/bin/eslint.js --fix --color --cache --quiet",
       "git add"
-    ]
-  },
-  "eslintConfig": {
-    "extends": [
-      "@modern-js"
     ]
   },
   "eslintIgnore": [

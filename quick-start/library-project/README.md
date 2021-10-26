@@ -12,33 +12,33 @@
 运行和调试组件
 
 ```
-pnpm dev
+pnpm run dev
 ```
 
 运行测试用例
 
 ```
-pnpm test
+pnpm run test
 ```
 
 按照社区规范和最佳实践，生成构建产物
 
 ```
-pnpm build
+pnpm run build
 ```
 
 继续创建更多项目要素
 
 ```
-pnpm new
+pnpm run new
 ```
 
 其他
 
 ```
-pnpm lint         # 检查和修复所有代码
-pnpm change       # 添加 changeset，用于发版时生成changelog
-pnpm bump         # 生成发版相关的修改，比如更新版本号、生成changelog
-pnpm publish      # 根据 bump 自动修改和人工修改的发版要求，发布项目
+pnpm run lint         # 检查和修复所有代码
+pnpm run change       # 添加 changeset，用于发版时生成 changelog
+pnpm run bump         # 生成发版相关的修改，比如更新版本号、生成 changelog
+pnpm run release      # 根据 bump 自动修改和人工修改的发版要求，发布项目
 
 ```

@@ -11,42 +11,9 @@
     "prepublishOnly": "modern build --platform",
     "dev": "modern dev",
     "build": "modern build",
-    "reset": "rm -rf node_modules",
-    "lint": "modern lint",
-    "change": "modern change",
-    "bump": "modern bump",
-    "pre": "modern pre",
-    "release": "modern release",
     "new": "modern new",
     "test": "modern test --passWithNoTests"
   },
-  "engines": {
-    "node": ">=12.22.6"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "node --max_old_space_size=8192 ./node_modules/.bin/eslint --fix --color --cache --quiet",
-      "git add"
-    ],
-    "*.{js,jsx,mjs,mjsx,cjs,cjsx}": [
-      "node --max_old_space_size=8192 ./node_modules/.bin/eslint --fix --color --cache --quiet",
-      "git add"
-    ]
-  },
-  "eslintConfig": {
-    "extends": [
-      "@modern-js"
-    ]
-  },
-  "eslintIgnore": [
-    "node_modules/",
-    "dist/"
-  ],
   "dependencies": {
     "@babel/runtime": "^7"
   },

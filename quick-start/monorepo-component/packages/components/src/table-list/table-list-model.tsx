@@ -17,13 +17,17 @@ export default model<State>('tableList').define({
   actions: {
     load: {
       fulfilled(state, payload) {
-        return {data: payload};
+        return { data: payload };
       },
-    }
+    },
   },
   effects: {
     async load() {
-      const data = await (await fetch('https://lf3-static.bytednsdoc.com/obj/eden-cn/beeh7uvzhq/users.json')).json();
+      const data = await (
+        await fetch(
+          'https://lf3-static.bytednsdoc.com/obj/eden-cn/beeh7uvzhq/users.json',
+        )
+      ).json();
       return data;
     },
   },
