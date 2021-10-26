@@ -1,9 +1,11 @@
 import { match, String, Number } from '@modern-js/runtime/server';
-import { User } from './_common/user';
 import axios from 'axios';
+import { User } from './_common/user';
 import { connection } from './_common/db';
 
-export default async (): Promise<{ key:string, name: string, age: number, country: string }[]> => {
+export default async (): Promise<
+  { key: string; name: string; age: number; country: string }[]
+> => {
   const res = await axios.get(
     'https://lf3-static.bytednsdoc.com/obj/eden-cn/beeh7uvzhq/users.json',
   );
@@ -64,4 +66,3 @@ export default async (): Promise<{ key:string, name: string, age: number, countr
 //       resolve(results);
 //     });
 //   });
-

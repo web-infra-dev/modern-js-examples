@@ -42,7 +42,7 @@ const App = () => (
         {sayHelloWorld()}
         <footer className="footer">
           <a href="#" target="_blank" rel="noopener noreferrer">
-            Powered by Modern.JS
+            Powered by Modern.js
           </a>
         </footer>
       </div>
