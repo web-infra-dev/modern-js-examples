@@ -1,5 +1,4 @@
 import { model } from '@modern-js/runtime/model';
-import users from '@api/users'
 
 type State = {
   data: {
@@ -26,8 +25,10 @@ export default model<State>('tableList').define({
   },
   effects: {
     async load() {
-      const data = await users();
-      return data;
+      const res = await fetch(
+        'https://lf3-static.bytednsdoc.com/obj/eden-cn/beeh7uvzhq/users.json',
+      );
+      return res.json();
     },
   },
 });
