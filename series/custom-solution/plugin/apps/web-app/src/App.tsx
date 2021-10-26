@@ -41,7 +41,7 @@ const App = () => (
             href="https://modernjs.dev"
             target="_blank"
             rel="noopener noreferrer">
-            Powered by Modern.JS
+            Powered by Modern.js
           </a>
         </footer>
       </div>
