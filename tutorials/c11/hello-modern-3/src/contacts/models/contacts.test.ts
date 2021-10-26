@@ -1,4 +1,4 @@
-import { createStore } from '@modern-js/runtime/model';
+import { createStore } from '@modern-js/runtime/testing';
 import contactsModel from './contacts';
 
 const mockItem = {
@@ -15,10 +15,10 @@ describe('test contracts model', () => {
     const [state, actions] = store.use(contactsModel);
 
     state.items.push(mockItem);
-    expect(state.items.length).toBe(1);
-    expect(state.items[0].archived).toBeFalsy();
+    expect(store.use(contactsModel)[0].items.length).toBe(1);
+    expect(store.use(contactsModel)[0].items[0].archived).toBeFalsy();
 
     await actions.archive('lihua@bytedance.com');
-    expect(state.items[0].archived).toBeTruthy();
+    expect(store.use(contactsModel)[0].items[0].archived).toBeTruthy();
   });
 });
