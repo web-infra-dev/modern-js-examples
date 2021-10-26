@@ -8,7 +8,8 @@
     "bump": "modern bump",
     "pre": "modern pre",
     "release": "modern release",
-    "clear": "modern clear"
+    "clear": "modern clear",
+    "prepare": "lerna run prepare"
   },
   "engines": {
     "node": ">=14.17.6"
