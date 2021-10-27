@@ -1,5 +1,5 @@
 {
-  "name": "use-loader",
+  "name": "effects",
   "version": "0.1.0",
   "scripts": {
     "reset": "rm -rf node_modules",
@@ -10,12 +10,7 @@
     "lint": "modern lint"
   },
   "engines": {
-    "node": ">=14.17.6"
-  },
-  "eslintConfig": {
-    "extends": [
-      "@modern-js"
-    ]
+    "node": ">=12.22.6"
   },
   "husky": {
     "hooks": {
@@ -24,12 +19,17 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "node --max_old_space_size=8192 ./node_modules/eslint/bin/eslint.js --fix --color --cache --quiet",
+      "node --max_old_space_size=8192 ./node_modules/.bin/eslint --fix --color --cache --quiet",
       "git add"
     ],
     "*.{js,jsx,mjs,mjsx,cjs,cjsx}": [
-      "node --max_old_space_size=8192 ./node_modules/eslint/bin/eslint.js --fix --color --cache --quiet",
+      "node --max_old_space_size=8192 ./node_modules/.bin/eslint --fix --color --cache --quiet",
       "git add"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "@modern-js"
     ]
   },
   "eslintIgnore": [
@@ -39,10 +39,7 @@
   "dependencies": {
     "@modern-js/runtime": "latest",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "@modern-js/plugin-bff": "latest",
-    "@modern-js/plugin-express": "latest",
-    "express": "^4.17.1"
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "@modern-js/app-tools": "latest",
@@ -51,8 +48,7 @@
     "@types/jest": "^26.0.9",
     "@types/react": "^17",
     "@types/react-dom": "^17",
-    "@types/node": "^14",
-    "@types/express": "^4.17.13"
+    "@types/node": "^14"
   },
   "modernConfig": {
     "runtime": {
