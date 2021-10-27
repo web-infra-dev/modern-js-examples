@@ -18,13 +18,13 @@
     "@babel/runtime": "^7"
   },
   "peerDependencies": {
-    "@modern-js/core": "^1.0.0-rc.21"
+    "@modern-js/core": "latest"
   },
   "devDependencies": {
-    "@modern-js/core": "^1.0.0-rc.21",
-    "@modern-js/module-tools": "^1.0.0-rc.0",
-    "@modern-js/plugin-jarvis": "^1.0.0-rc.0",
-    "@modern-js/plugin-testing": "^1.0.0-rc.0",
+    "@modern-js/core": "latest",
+    "@modern-js/module-tools": "latest",
+    "@modern-js/plugin-jarvis": "latest",
+    "@modern-js/plugin-testing": "latest",
     "@types/jest": "^26.0.9",
     "@types/node": "^14",
     "@types/react": "^17",
