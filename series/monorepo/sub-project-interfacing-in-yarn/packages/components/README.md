@@ -7,24 +7,24 @@
 运行和调试组件
 
 ```
-yarn dev
+pnpm dev
 ```
 
 运行测试用例
 
 ```
-yarn test
+pnpm test
 ```
 
 按照社区规范和最佳实践，生成构建产物
 
 ```
-yarn build
+pnpm build
 ```
 
 继续创建更多项目要素
 
 ```
-yarn new
+pnpm new
 ```
 
