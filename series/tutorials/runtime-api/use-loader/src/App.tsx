@@ -2,8 +2,8 @@ import { useLoader } from '@modern-js/runtime';
 
 function useUserInfoLoader(username: string) {
   return useLoader(
-    async () => {
-      const res = await fetch(`/api/user?username=${username}`);
+    async (context, _username) => {
+      const res = await fetch(`/api/user?username=${_username}`);
       return res.json();
     },
     {
