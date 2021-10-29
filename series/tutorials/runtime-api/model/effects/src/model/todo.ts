@@ -3,7 +3,7 @@ import { model } from "@modern-js/runtime/model";
 const todoModel = model("todo").define((context, { use }) => {
   return {
     state: {
-      items: ["reduck"],
+      items: [],
       loading: false,
       error: null
     },

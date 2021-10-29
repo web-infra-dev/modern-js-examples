@@ -5,11 +5,11 @@ const stepModel = model('step').define({
 });
 
 const counterModel = model('count').define((context, { use, onMount }) => {
-  const [,,subsribeStep] = use(stepModel);
+  const [,,subscribeStep] = use(stepModel);
 
   onMount(() => {
-    return subsribeStep(() => {
-      console.log(`Subsribe in counterModel: stepModel change to ${use(stepModel)[0]}`)
+    return subscribeStep(() => {
+      console.log(`Subscribe in counterModel: stepModel change to ${use(stepModel)[0]}`)
     });
   });
 
