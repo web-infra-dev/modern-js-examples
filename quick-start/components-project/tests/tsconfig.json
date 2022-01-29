@@ -2,6 +2,10 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "baseUrl": "../",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@style/*": ["./styles/*"]
+    }
   },
   "include": ["**/*"]
 }
