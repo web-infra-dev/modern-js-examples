@@ -49,13 +49,14 @@
   "devDependencies": {
     "@modern-js/app-tools": "latest",
     "@modern-js/plugin-jarvis": "latest",
+    "@modern-js/plugin-storybook": "latest",
+    "@modern-js/plugin-tailwindcss": "latest",
     "@modern-js/plugin-unbundle": "latest",
     "@types/node": "^16.11.0",
     "@types/react": "^17.0.30",
     "@types/react-dom": "^17.0.9",
     "typescript": "^4.4.4",
-    "@modern-js/plugin-tailwindcss": "latest",
-    "@modern-js/plugin-storybook": "latest"
+    "tailwindcss": "latest"
   },
   "modernConfig": {
     "runtime": {
