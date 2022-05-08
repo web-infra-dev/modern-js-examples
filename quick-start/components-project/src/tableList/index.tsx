@@ -1,4 +1,3 @@
-import type React from 'react';
 import { useEffect } from 'react';
 import { Table } from 'antd';
 import { useModel } from '@modern-js/runtime/model';
@@ -28,7 +27,7 @@ export default () => {
   const [{ data }, { load }] = useModel(tableListModel);
 
   useEffect(() => {
-    load();
+    (load as any)();
   }, []);
 
   return (
