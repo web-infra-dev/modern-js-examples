@@ -19,12 +19,10 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "node --max_old_space_size=8192 ./node_modules/.bin/eslint --fix --color --cache --quiet",
-      "git add"
+      "node --max_old_space_size=8192 ./node_modules/.bin/eslint --fix --color --cache --quiet"
     ],
     "*.{js,jsx,mjs,mjsx,cjs,cjsx}": [
-      "node --max_old_space_size=8192 ./node_modules/.bin/eslint --fix --color --cache --quiet",
-      "git add"
+      "node --max_old_space_size=8192 ./node_modules/.bin/eslint --fix --color --cache --quiet"
     ]
   },
   "eslintConfig": {
