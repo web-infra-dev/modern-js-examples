@@ -1,4 +1,5 @@
-/// <reference types="@modern-js/plugin-testing/type" />
+/// <reference types='@modern-js/app-tools/types' />
+/// <reference types='@modern-js/plugin-testing/types' />
 
 declare module 'react-ladda' {
   const LaddaButton: any;
