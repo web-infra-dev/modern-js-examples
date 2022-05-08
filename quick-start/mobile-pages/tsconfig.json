@@ -7,8 +7,7 @@
     "paths": {
       "@api/*": ["./api/*"],
       "@/*": ["./src/*"]
-    },
-    "types": ["@modern-js/plugin-testing/type"]
+    }
   },
   "include": ["src", "api", "server", "config"]
 }
