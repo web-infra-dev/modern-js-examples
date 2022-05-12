@@ -12,7 +12,7 @@ body {
   box-sizing: border-box;
 }
 
-.container {
+.container-box {
   min-height: 100vh;
   max-width: 100%;
   display: flex;
@@ -75,13 +75,13 @@ main {
 }
 
 @media (max-width: 600px) {
-  .grid {
+ .grid {
     width: 100%;
     flex-direction: column;
   }
 }
 
-.grid {
+.container-box .grid {
   display: flex;
   align-items: center;
   justify-content: center;

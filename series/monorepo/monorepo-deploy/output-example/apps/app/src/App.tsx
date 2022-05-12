@@ -7,7 +7,7 @@ import './App.css';
 const App = () => (
   <Switch>
     <Route exact={true} path="/">
-      <div className="container">
+      <div className="container-box">
         <Comp text={formatString('hello world')} />
         <main>
           <div className="logo">
