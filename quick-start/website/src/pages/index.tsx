@@ -3,7 +3,7 @@ import { Link } from '@modern-js/runtime/router';
 import './index.css';
 
 const Index = () => (
-  <div className="container">
+  <div className="container-box">
     <Helmet>
       <title>Home</title>
     </Helmet>
