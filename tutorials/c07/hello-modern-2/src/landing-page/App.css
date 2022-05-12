@@ -11,8 +11,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
-
-.container {
+.container-box {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -74,13 +73,13 @@ main {
 }
 
 @media (max-width: 600px) {
-  .grid {
+ .grid {
     width: 100%;
     flex-direction: column;
   }
 }
 
-.grid {
+.container-box .grid {
   display: flex;
   align-items: center;
   justify-content: center;
