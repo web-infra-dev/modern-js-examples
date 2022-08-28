@@ -1,13 +1,8 @@
-import { useModel, createApp } from "@modern-js/runtime/model";
-import countModel from "./models/count";
-
-const {
-  Provider: LocalCounterProvider,
-  useModel: useLocalCounterModel
-} = createApp({});
+import { useModel, useLocalModel } from '@modern-js/runtime/model';
+import countModel from './models/count';
 
 function LocalCounter() {
-  const [state, actions] = useLocalCounterModel(countModel);
+  const [state, actions] = useLocalModel(countModel);
 
   return (
     <div>
@@ -16,7 +11,6 @@ function LocalCounter() {
     </div>
   );
 }
-
 
 function Counter() {
   const [state, actions] = useModel(countModel);
@@ -30,9 +24,10 @@ function Counter() {
 }
 
 export default function App() {
-  return <LocalCounterProvider>
-    <Counter />
-    <LocalCounter />
-  </LocalCounterProvider>;
+  return (
+    <div>
+      <Counter />
+      <LocalCounter />
+    </div>
+  );
 }
-
