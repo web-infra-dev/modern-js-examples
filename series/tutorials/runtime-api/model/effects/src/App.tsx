@@ -7,7 +7,6 @@ function Todo() {
 
   useEffect(() => {
     actions.load();
-    // actions.loadWithThunk();
   }, []);
 
   if (state.loading) {
@@ -17,8 +16,8 @@ function Todo() {
   return (
     <div>
       <div>
-        {state.items.map((item) => (
-          <div>item</div>
+        {state.items.map((item, index) => (
+          <div key={index}>{item}</div>
         ))}
       </div>
     </div>

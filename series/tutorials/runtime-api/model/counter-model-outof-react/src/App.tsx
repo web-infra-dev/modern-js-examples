@@ -1,16 +1,24 @@
-import { useModel, createStore, Provider } from "@modern-js/runtime/model";
+import { useModel, useStore, Store } from "@modern-js/runtime/model";
+import { useMemo } from "react";
 import countModel from "./models/count";
 
-const store = createStore();
-
-const [, actions] = store.use(countModel);
-
+let store:Store;
+function setStore(s: Store) { store = s }; 
+function getStore() { return store }; 
+ 
 setInterval(() => {
+  const store = getStore();
+  const [, actions] = store.use(countModel);
   actions.add();
 }, 1000)
 
 function Counter() {
-  const [state, actions] = useModel(countModel);
+  const [state] = useModel(countModel);
+  const store = useStore();
+
+  useMemo(()=> {
+    setStore(store)
+  }, [store])
 
   return (
     <div>
@@ -20,8 +28,6 @@ function Counter() {
 }
 
 export default function App() {
-  return <Provider store={store}>
-    <Counter />
-  </Provider>;
+  return <Counter/>
 }
 
