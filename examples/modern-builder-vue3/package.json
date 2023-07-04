@@ -3,24 +3,16 @@
   "version": "0.1.0",
   "scripts": {
     "reset": "npx rimraf ./**/node_modules",
-    "dev": "modern dev",
-    "build": "modern build",
-    "start": "modern start",
-    "serve": "modern serve",
-    "new": "modern new",
-    "lint": "modern lint",
-    "prepare": "husky install",
-    "upgrade": "modern upgrade"
-  },
-  "engines": {
-    "node": ">=16.18.1"
+    "dev": "builder dev",
+    "build": "builder build",
+    "serve": "builder serve"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
-      "node --max_old_space_size=8192 ./node_modules/eslint/bin/eslint.js --fix --color --cache --quiet"
+      "node ./node_modules/eslint/bin/eslint.js --fix --color --cache --quiet"
     ],
     "*.{js,jsx,mjs,mjsx,cjs,cjsx}": [
-      "node --max_old_space_size=8192 ./node_modules/eslint/bin/eslint.js --fix --color --cache --quiet"
+      "node ./node_modules/eslint/bin/eslint.js --fix --color --cache --quiet"
     ]
   },
   "eslintIgnore": [
@@ -28,12 +20,12 @@
     "dist/"
   ],
   "dependencies": {
-    "@modern-js/runtime": "2.25.1",
-    "react": "~18.2.0",
-    "react-dom": "~18.2.0"
+    "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@modern-js/app-tools": "2.25.1",
+    "@modern-js/builder-cli": "2.25.1",
+    "@modern-js/builder-plugin-vue": "2.25.1",
+    "@modern-js/builder-webpack-provider": "2.25.1",
     "@modern-js/eslint-config": "2.25.1",
     "@modern-js/tsconfig": "2.25.1",
     "@modern-js-app/eslint-config": "2.25.1",
@@ -42,9 +34,6 @@
     "husky": "~8.0.1",
     "rimraf": "~3.0.2",
     "typescript": "~5.0.4",
-    "@types/jest": "~29.2.4",
-    "@types/node": "~16.11.7",
-    "@types/react": "~18.0.26",
-    "@types/react-dom": "~18.0.10"
+    "@types/node": "~16.11.7"
   }
 }

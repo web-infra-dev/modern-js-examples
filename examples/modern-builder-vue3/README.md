@@ -1,4 +1,4 @@
-# Modern.js App
+# Modern.js Builder Vue 3 App
 
 ## Setup
 
@@ -16,12 +16,6 @@ Start the dev server:
 pnpm dev
 ```
 
-Enable optional features or add a new entry:
-
-```
-pnpm new
-```
-
 Build the app for production:
 
 ```
@@ -34,4 +28,8 @@ Preview the production build locally:
 pnpm serve
 ```
 
-For more information, see the [Modern.js documentation](https://modernjs.dev/en).
+## Documentation
+
+- [CLI Usage](https://modernjs.dev/builder/en/guide/basic/builder-cli.html)
+- [Configurations](https://modernjs.dev/builder/en/api/index.html)
+- [Vue 3 Plugin](https://modernjs.dev/builder/en/plugins/plugin-vue.html)
