@@ -1,7 +1,0 @@
-:root {
-  --custom-text-color:rgb(113, 128, 150);
-}
-
-.custom-text-gray {
-  color: var(--custom-text-color);
-}
