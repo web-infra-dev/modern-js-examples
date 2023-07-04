@@ -1,7 +1,0 @@
-packages:
-  - apps/**
-  - examples/**
-  - services/**
-  - features/**
-  - packages/**
-  - apps/**
