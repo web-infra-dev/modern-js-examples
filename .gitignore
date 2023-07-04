@@ -20,22 +20,15 @@ node_modules/
 .nyc_output
 *.tsbuildinfo
 .eslintcache
-.sonarlint
 
 dist/
 coverage/
 release/
-output/
-output_resource/
 
 .vscode/**/*
 !.vscode/settings.json
 !.vscode/extensions.json
 .idea/
-
-**/*/typings/auto-generated
-**/*/adapters/**/index.ts
-**/*/adapters/**/index.js
 
 yarn.lock
 pnpm-lock.yaml
