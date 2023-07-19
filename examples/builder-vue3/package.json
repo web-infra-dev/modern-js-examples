@@ -23,12 +23,12 @@
     "vue": "^3.3.4"
   },
   "devDependencies": {
-    "@modern-js/builder-cli": "0.0.0-next-1688452329545",
-    "@modern-js/builder-plugin-vue": "0.0.0-next-1688452329545",
-    "@modern-js/builder-webpack-provider": "0.0.0-next-1688452329545",
-    "@modern-js/eslint-config": "0.0.0-next-1688452329545",
-    "@modern-js/tsconfig": "0.0.0-next-1688452329545",
-    "@modern-js-app/eslint-config": "0.0.0-next-1688452329545",
+    "@modern-js/builder-cli": "2.26.0",
+    "@modern-js/builder-plugin-vue": "2.26.0",
+    "@modern-js/builder-webpack-provider": "2.26.0",
+    "@modern-js/eslint-config": "2.26.0",
+    "@modern-js/tsconfig": "2.26.0",
+    "@modern-js-app/eslint-config": "2.26.0",
     "lint-staged": "~13.1.0",
     "prettier": "~2.8.1",
     "husky": "~8.0.1",
