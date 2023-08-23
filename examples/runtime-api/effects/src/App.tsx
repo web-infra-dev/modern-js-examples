@@ -1,11 +1,12 @@
 import { useEffect } from 'react';
-import { useModel } from "@modern-js/runtime/model";
+import { useModel } from '@modern-js/runtime/model';
 import todoModel from './model/todo';
 
 function Todo() {
   const [state, actions] = useModel(todoModel);
 
   useEffect(() => {
+    // @ts-expect-error
     actions.load();
   }, []);
 
@@ -25,5 +26,5 @@ function Todo() {
 }
 
 export default function App() {
-  return <Todo />
+  return <Todo />;
 }
