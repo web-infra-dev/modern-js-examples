@@ -5,7 +5,7 @@ const countModel = model('count').define({
     value: 1,
   },
   actions: {
-    add(state: { value: number }) {
+    add(state) {
       return {
         ...state,
         value: state.value + 1,

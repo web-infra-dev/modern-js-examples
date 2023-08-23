@@ -6,7 +6,6 @@ function Todo() {
   const [state, actions] = useModel(todoModel);
 
   useEffect(() => {
-    // @ts-expect-error
     actions.load();
   }, []);
 
