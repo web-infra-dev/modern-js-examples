@@ -1,14 +1,14 @@
-import { model } from "@modern-js/runtime/model";
+import { model } from '@modern-js/runtime/model';
 
 export interface FooState {
   a: string;
   b: string;
 }
 
-const fooModel = model("foo").define({
+const fooModel = model('foo').define({
   state: {
-    a: "",
-    b: "",
+    a: '',
+    b: '',
   },
   actions: {
     setA(state, payload) {
