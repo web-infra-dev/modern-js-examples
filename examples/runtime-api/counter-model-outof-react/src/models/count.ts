@@ -1,17 +1,17 @@
 import { model } from '@modern-js/runtime/model';
 
-const countModel = model("count").define({
+const countModel = model('count').define({
   state: {
-    value: 1
+    value: 1,
   },
   actions: {
-    add(state) {
+    add(state: { value: number }) {
       return {
         ...state,
-        value: state.value + 1
+        value: state.value + 1,
       };
-    }
-  }
+    },
+  },
 });
 
 export default countModel;
