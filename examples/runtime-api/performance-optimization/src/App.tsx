@@ -1,10 +1,10 @@
-import { useModel } from "@modern-js/runtime/model";
-import barModel from "./models/bar";
-import fooModel from "./models/foo";
+import { useModel } from '@modern-js/runtime/model';
+import barModel from './models/bar';
+import fooModel from './models/foo';
 
 function ComponentA() {
   // 通过传入 selector 函数，只返回 a 状态给组件
-  const [stateA] = useModel(fooModel, (state) => state.a);
+  const [stateA] = useModel(fooModel, state => state.a);
 
   return <div>{stateA}</div>;
 }

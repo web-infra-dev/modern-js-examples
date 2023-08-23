@@ -1,27 +1,37 @@
-# Your MWA
+# Modern.js App
 
-## Prerequisites
+## Setup
 
-1. [Node.js LTS](https://github.com/nodejs/Release)
-    * [Automatically call nvm use](https://github.com/nvm-sh/nvm#deeper-shell-integration)
+Install the dependencies:
+
+```bash
+pnpm install
+```
 
 ## Get Started
 
-按开发环境的要求，运行和调试项目
+Start the dev server:
 
 ```
 pnpm dev
 ```
 
-继续创建更多项目要素，比如应用入口
+Enable optional features or add a new entry:
 
 ```
 pnpm new
 ```
 
-其他
+Build the app for production:
 
 ```
-pnpm build        # 按产品环境的要求，构建项目
-pnpm start        # 按产品环境的要求，运行项目
+pnpm build
 ```
+
+Preview the production build locally:
+
+```
+pnpm serve
+```
+
+For more information, see the [Modern.js documentation](https://modernjs.dev/en).
