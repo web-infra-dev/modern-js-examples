@@ -8,11 +8,8 @@
 *.log*
 
 node_modules/
-.yarn-integrity
-.pnpm-store/
 *.tsbuildinfo
 .eslintcache
-.changeset/pre.json
 
 dist/
 coverage/
@@ -25,7 +22,5 @@ log/
 !.vscode/settings.json
 !.vscode/extensions.json
 .idea/
-
-**/*/typings/auto-generated
 
 modern.config.local.*

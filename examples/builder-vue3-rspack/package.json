@@ -7,18 +7,6 @@
     "build": "builder build",
     "serve": "builder serve"
   },
-  "lint-staged": {
-    "*.{ts,tsx}": [
-      "node ./node_modules/eslint/bin/eslint.js --fix --color --cache --quiet"
-    ],
-    "*.{js,jsx,mjs,mjsx,cjs,cjsx}": [
-      "node ./node_modules/eslint/bin/eslint.js --fix --color --cache --quiet"
-    ]
-  },
-  "eslintIgnore": [
-    "node_modules/",
-    "dist/"
-  ],
   "dependencies": {
     "vue": "^3.3.4"
   },
@@ -26,12 +14,8 @@
     "@modern-js/builder-cli": "^2.31.2",
     "@modern-js/builder-plugin-vue": "^2.31.2",
     "@modern-js/builder-rspack-provider": "^2.31.2",
-    "@modern-js/eslint-config": "^2.31.2",
     "@modern-js/tsconfig": "^2.31.2",
-    "@modern-js-app/eslint-config": "^2.31.2",
-    "lint-staged": "~13.1.0",
     "prettier": "~2.8.1",
-    "husky": "~8.0.1",
     "rimraf": "~3.0.2",
     "typescript": "~5.0.4",
     "@types/node": "~16.11.7"

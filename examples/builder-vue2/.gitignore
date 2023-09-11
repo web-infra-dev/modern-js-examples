@@ -5,23 +5,10 @@
 .env.local
 .env.*.local
 .history
-.rts*
 *.log*
-*.pid
-*.pid.*
-*.report
-*.lcov
-lib-cov
 
 node_modules/
-.npm
-.lock-wscript
-.yarn-integrity
-.node_repl_history
-.nyc_output
 *.tsbuildinfo
-.eslintcache
-.sonarlint
 
 dist/
 coverage/
@@ -35,14 +22,4 @@ log/
 !.vscode/extensions.json
 .idea/
 
-**/*/typings/auto-generated
-
-.changeset/pre.json
-
-.pnpm-store/
-
-modern.config.local.ts
-modern.config.local.js
-modern.config.local.mjs
-
-doc_build/
+modern.config.local.*

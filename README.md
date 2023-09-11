@@ -8,7 +8,7 @@ Here are some examples you can refer to:
 
 ### React App
 
-- [basic-app](./examples//basic-app/): Basic Modern.js App using React 18, TypeScript, Rspack and nested routes.
+- [basic-app](./examples/basic-app/): Basic Modern.js App using React 18, TypeScript, Rspack and nested routes.
 - [runtime-api](./examples/runtime-api/): Sample code for the Modern.js Runtime API.
 
 ### Vue App
