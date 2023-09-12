@@ -12,25 +12,25 @@ pnpm install
 
 Start the dev server:
 
-```
+```bash
 pnpm dev
 ```
 
 Enable optional features or add a new entry:
 
-```
+```bash
 pnpm new
 ```
 
 Build the app for production:
 
-```
+```bash
 pnpm build
 ```
 
 Preview the production build locally:
 
-```
+```bash
 pnpm serve
 ```
 
