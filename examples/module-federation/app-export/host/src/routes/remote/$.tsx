@@ -15,7 +15,7 @@ const Loading = <div>loading...</div>;
 
 // 使用 createRemoteComponent 导入远程应用，并配置 loader、fallback、loading 等，参数含义参考 官网文档
 const RemoteApp = createRemoteComponent({
-  loader: () => loadRemote('remote/remote'),
+  loader: () => loadRemote('remote/app'),
   fallback: ErrorBoundary,
   loading: Loading,
 });
