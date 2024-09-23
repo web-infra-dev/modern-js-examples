@@ -4,9 +4,9 @@ import { Button } from 'remote/Button';
 const Index = (): JSX.Element => {
   return (
     <div>
-      <Suspense fallback={<div>Loading...</div>}>
         <Button />
-      </Suspense>
+      {/* <Suspense fallback={<div>Loading...</div>}>
+      </Suspense> */}
     </div>
   );
 };
