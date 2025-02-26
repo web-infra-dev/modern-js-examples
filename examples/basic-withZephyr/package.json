@@ -13,7 +13,7 @@
     "upgrade": "modern upgrade"
   },
   "engines": {
-    "node": ">=16.18.1"
+    "node": ">=18.20.2"
   },
   "lint-staged": {
     "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
