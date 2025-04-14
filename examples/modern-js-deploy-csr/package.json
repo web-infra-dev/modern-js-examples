@@ -1,5 +1,5 @@
 {
-  "name": "modern-deploy-csr",
+  "name": "modern-js-deploy-csr",
   "version": "0.1.0",
   "scripts": {
     "reset": "npx rimraf node_modules ./**/node_modules",
@@ -13,7 +13,7 @@
     "upgrade": "modern upgrade"
   },
   "engines": {
-    "node": ">=16.18.1"
+    "node": ">=18"
   },
   "lint-staged": {
     "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
