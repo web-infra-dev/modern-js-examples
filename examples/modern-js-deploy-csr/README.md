@@ -9,7 +9,6 @@ This is a CSR (Client-Side Rendering) application example project built with the
 ## Project Features
 
 - Built with the Modern.js framework
-- Uses SSR (Server-Side Rendering) technology to enhance performance and SEO
 - Supports multiple deployment platforms
 - Built with React 18 for the user interface
 - Uses TypeScript for type safety
