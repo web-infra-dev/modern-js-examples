@@ -10,7 +10,9 @@
     "new": "modern new",
     "lint": "biome check",
     "prepare": "simple-git-hooks",
-    "upgrade": "modern upgrade"
+    "upgrade": "modern upgrade",
+    "deploy": "modern deploy",
+    "deploy:gh-pages": "MODERNJS_DEPLOY=ghPages modern deploy && gh-pages -d .output"
   },
   "engines": {
     "node": ">=18"
@@ -29,16 +31,18 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@modern-js/app-tools": "2.67.1",
-    "@modern-js/tsconfig": "2.67.1",
     "@biomejs/biome": "1.9.4",
-    "typescript": "~5.7.3",
+    "@modern-js/app-tools": "0.0.0-next-20250415112835",
+    "@modern-js/tsconfig": "2.67.1",
     "@types/jest": "~29.2.4",
     "@types/node": "~18.11.9",
     "@types/react": "^18.3.11",
     "@types/react-dom": "~18.3.1",
     "lint-staged": "~15.4.0",
+    "rimraf": "^6.0.1",
     "simple-git-hooks": "^2.11.1",
-    "rimraf": "^6.0.1"
-  }
+    "typescript": "~5.7.3",
+    "gh-pages": "^6.3.0"
+  },
+  "packageManager": "pnpm@9.15.1"
 }
