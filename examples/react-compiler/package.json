@@ -1,0 +1,47 @@
+{
+  "name": "modern-0520",
+  "version": "0.1.0",
+  "scripts": {
+    "reset": "npx rimraf node_modules ./**/node_modules",
+    "dev": "modern dev",
+    "build": "modern build",
+    "start": "modern start",
+    "serve": "modern serve",
+    "new": "modern new",
+    "lint": "biome check",
+    "prepare": "simple-git-hooks",
+    "upgrade": "modern upgrade"
+  },
+  "engines": {
+    "node": ">=16.18.1"
+  },
+  "lint-staged": {
+    "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}": [
+      "biome check --files-ignore-unknown=true"
+    ]
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "dependencies": {
+    "@modern-js/runtime": "2.67.5",
+    "react": "^18.3.1",
+    "react-compiler-runtime": "19.1.0-rc.2",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@modern-js/app-tools": "2.67.5",
+    "@modern-js/tsconfig": "2.67.5",
+    "@types/jest": "~29.2.4",
+    "@types/node": "~18.11.9",
+    "@types/react": "^18.3.11",
+    "@types/react-dom": "~18.3.1",
+    "babel-plugin-react-compiler": "19.1.0-rc.2",
+    "eslint-plugin-react-hooks": "^6.0.0-rc.1",
+    "lint-staged": "~15.4.0",
+    "rimraf": "^6.0.1",
+    "simple-git-hooks": "^2.11.1",
+    "typescript": "~5.7.3"
+  }
+}
