@@ -1,13 +1,6 @@
 import '@modern-js/runtime/registry/main';
 export declare const provider: () => {
-  render(
-    info: import('@module-federation/bridge-react').RenderFnParams & {
-      [key: string]: unknown;
-    },
-  ): Promise<void>;
-  destroy(info: {
-    moduleName: string;
-    dom: HTMLElement;
-  }): void;
+    render(info: import("@module-federation/bridge-react").RenderParams): Promise<void>;
+    destroy(info: import("@module-federation/bridge-react").DestroyParams): void;
 };
 export default provider;

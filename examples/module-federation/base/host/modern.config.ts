@@ -6,11 +6,12 @@ export default defineConfig({
   runtime: {
     router: true,
   },
-  // server: {
-  //   ssr: {
-  //     mode: 'stream',
-  //   },
-  // },
+  server: {
+    ssr: {
+      mode: 'stream',
+      disablePrerender: true,
+    },
+  },
   plugins: [
     appTools({
       bundler: 'rspack', // Set to 'webpack' to enable webpack

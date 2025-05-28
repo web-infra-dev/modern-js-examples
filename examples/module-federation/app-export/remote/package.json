@@ -24,16 +24,16 @@
     "pre-commit": "npx lint-staged"
   },
   "dependencies": {
-    "@modern-js/runtime": "2.65.3",
-    "@module-federation/bridge-react": "0.10.0",
-    "@module-federation/modern-js": "0.10.0",
+    "@modern-js/runtime": "2.67.6",
+    "@module-federation/bridge-react": "0.14.3",
+    "@module-federation/modern-js": "0.14.3",
     "react": "~18.2.0",
     "react-dom": "~18.2.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
-    "@modern-js/app-tools": "2.65.3",
-    "@modern-js/tsconfig": "2.65.3",
+    "@modern-js/app-tools": "2.67.6",
+    "@modern-js/tsconfig": "2.67.6",
     "@types/jest": "~29.2.4",
     "@types/node": "~16.11.7",
     "@types/react": "~18.0.26",
