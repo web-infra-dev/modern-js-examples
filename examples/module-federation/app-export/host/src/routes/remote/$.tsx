@@ -1,4 +1,4 @@
-import { createRemoteComponent } from '@module-federation/bridge-react';
+import { createRemoteAppComponent } from '@module-federation/bridge-react';
 import { loadRemote } from '@module-federation/modern-js/runtime';
 
 // 定义 FallbackErrorComp 组件
@@ -14,7 +14,7 @@ const ErrorBoundary = (info?: { error: { message: string } }) => {
 const Loading = <div>loading...</div>;
 
 // 使用 createRemoteComponent 导入远程应用，并配置 loader、fallback、loading 等，参数含义参考 官网文档
-const RemoteApp = createRemoteComponent({
+const RemoteApp = createRemoteAppComponent({
   loader: () => loadRemote('remote/app'),
   fallback: ErrorBoundary,
   loading: Loading,

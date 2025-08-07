@@ -13,7 +13,7 @@ export default defineConfig({
     // Now this configuration is only used in the local when you run modern serve command.
     // If you want to deploy the application to the platform, use your own domain name.
     // Module federation will automatically write it to mf-manifest.json, which influences consumer to fetch remoteEntry.js.
-    assetPrefix: 'http://127.0.0.1:3051'
+    assetPrefix: 'http://127.0.0.1:3051',
   },
   plugins: [
     appTools({
