@@ -1,3 +1,4 @@
+.DS_Store
 examples/**/yarn.lock
 examples/**/pnpm-lock.yaml
 examples/**/package-lock.json
